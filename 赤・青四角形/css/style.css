@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-    (align-items: flex-end;)
 }
 
 .wrap1 div{
@@ -30,5 +29,4 @@
     width: 300px;
     height: 300px;
     margin-bottom: 50px;
-
 }
