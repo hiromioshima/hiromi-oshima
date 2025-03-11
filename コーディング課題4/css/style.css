@@ -97,79 +97,67 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     width: 100%;
 }
 
-.section1{
+/* セクション コンセプト */
+.section{
     background: #e8d9bf;
     text-align: center;
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding-top: 100px;
 }
-
 .concept1{
     font-size: 30px;
 }
-
 .concept2{
     font-size: 82px;
     margin-top: 50px;
     line-height: 1.17;
 }
-
 .concept3{
     font-size: 23px;
     margin-top: 50px;
     line-height: 1.65;
 }
 
-.section2{
-    background-color: #e8d9bf;
-    justify-content: center;
+/* セクション ABOUT US */
+.wrap-aboutus{
+    width: 1000px;
+    margin: 0 auto;
     display: flex;
-    
 }
-
 .コーヒー３つ{
     width: 500px;
     border-bottom-right-radius: 50px;
 }
-
-.title1 img{
-    justify-content: center;
-    width: 272px;
+.title img{
+    height: 78px;
+}
+.boxaboutus{
+    text-align: left;
     margin-top: 60px;
-}
-
-.ABOUTbox{
-    text-align: center;
-    justify-content: center;
-    background-color: aqua;
+    width: 410px;
+    padding-left: 48px;
 
 }
-
 .小題名{
     font-size: 44px;
     line-height: 1.38;
     margin-top: 50px;
 }
-
-.説明文1{
+.text1{
     line-height: 1.47;
     width: 410px;
     margin-top: 30px;
 }
 
-.section3{
-    background-color: #e8d9bf;
-    justify-content: center;
-    text-align: center;
+/* セクション　MENU */
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
 }
-
-.title2 img{
-    width: 151px;
-}
-
-.box{
+.item{
     text-align: left;
     width: 300px;
+    padding-right:50px;
 }
 
 .メニュー名{
@@ -177,6 +165,3 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     font-size: 38px;
 }
 
-.説明文2{
-    
-}
