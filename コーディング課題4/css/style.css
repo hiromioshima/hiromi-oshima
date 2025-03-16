@@ -60,7 +60,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    padding: 10px;
     padding-left: 2.51%;
     padding-right: 6.53%;
     position: absolute;
@@ -97,8 +97,15 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     width: 100%;
 }
 
+/* PCメニューを消してハンバーガーメニューを出す */
+.hamburger,
+.sp-nav{
+    display: none;
+}
+
+
 /* セクション コンセプト */
-.section{
+.section1{
     background: #e8d9bf;
     text-align: center;
     padding-top: 100px;
@@ -118,50 +125,213 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 }
 
 /* セクション ABOUT US */
-.wrap-aboutus{
-    width: 1000px;
+.about-wrap{
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
-.コーヒー３つ{
-    width: 500px;
+.about-left-img{
+    width: 50%;
     border-bottom-right-radius: 50px;
 }
 .title img{
     height: 78px;
 }
-.boxaboutus{
+.about-box{
     text-align: left;
     margin-top: 60px;
-    width: 410px;
-    padding-left: 48px;
-
+    width: 41%;
 }
-.小題名{
+.read{
     font-size: 44px;
     line-height: 1.38;
     margin-top: 50px;
 }
-.text1{
-    line-height: 1.47;
-    width: 410px;
+.about-text{
+    line-height: 1.62;
     margin-top: 30px;
+    font-size: 16px;
 }
 
-/* セクション　MENU */
+/* セクション MENU */
 .container{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
+    margin-top: 50px;
     display: flex;
+    justify-content: space-between;
 }
-.item{
+.card{
     text-align: left;
-    width: 300px;
-    padding-right:50px;
+    width: 30%;
 }
 
-.メニュー名{
+.menu-img{
+    width: 100%;
+    border-top-right-radius: 50px;
+}
+.menu{
     color: #d30202;
     font-size: 38px;
+    margin-top: -14px;
+    margin-left: 12px;
 }
 
+.menu-text{
+    line-height: 1.47;
+    margin-top: 24px;
+    font-size: 17px;
+}
+
+/* セクション GALLERY */
+.slider-gallery{
+    margin-top: 26px;
+    display: flex;
+}
+.gallery-img{
+    width: 20%;
+}
+
+/* セクション EVENT */
+.event-box{
+    background: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-left: 162px;
+    padding-bottom: 40px;
+    border:solid 3.68px #4f260b
+}
+
+.event-text-box{
+    display: flex;
+}
+
+.event-data{
+    font-size: 23px;
+    line-height: 1.95;
+    margin-right: 56px;
+}
+
+.event-text{
+    font-size: 23px;
+    line-height: 1.95;
+}
+
+/* セクション Access */
+.map{
+    max-width: 100%;
+    height: 100%;
+    height: 470px;
+    margin-top: 46px;
+}
+
+/* セクション footer */
+.section2{
+    background: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+.footer-wrap{
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+}
+.footer-logo{
+    height: 50px;
+    margin-right: 70px;
+}
+.footer-textbox{
+    text-align: left;
+}
+.footer-text{
+    font-size: 20px;
+    line-height: 1.95;
+}
+.copyright{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .pc-nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        height: 33px;
+        cursor: pointer;
+    }
+    .hamburger span{
+        display: block;
+        width: 33px;
+        height: 2px;
+        background: #fff;
+        position: relative;
+        top: 10px;
+    }
+
+.hamburger span::before,
+.hamburger span::after {
+    content: '';
+    display: block;
+    width: 33px;
+    height:  2px;
+    background: #fff;
+    position: absolute;
+}
+
+.hamburger span::before{
+    bottom: 10px;
+}
+
+.hamburger span::after{
+    top: 10px;
+}
+
+.open span{
+    background: transparent;
+}
+.open span::before {
+    bottom: 0px;
+    transform: rotate(45deg);
+}
+
+.open span::after{
+    top: 0px;
+    transform: rotate(135deg);
+}
+
+.sp-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.sp-nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sp-nav ul li a{
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+}

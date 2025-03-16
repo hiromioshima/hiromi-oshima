@@ -6,6 +6,7 @@
     <title>課題4</title>
     <meta name=""content="">
     <link rel="stylesheet" href="css/style.css ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,6 +23,16 @@
             <li><a href="">ACCESS</a></li>
         </ul>
         </nav>
+        <div class="hamburger"><span></span></div>
+        <nav class="sp-nav">
+            <ul>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">MENU</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">EVENT</a></li>
+                <li><a href="">ACCESS</a></li>
+            </ul>
+        </nav>
     </div>
 
     <!-- ファーストビュー -->
@@ -31,39 +42,115 @@
     </header>
 
     <!-- セクション1 コンセプト -->
-    <div class="section">
+    <section class="section1">
         <p class="concept1">Have a happy day From a cup of coffee.</p>
         <p class="concept2">ハッピーに溢れる１日を<br>
             １杯のコーヒーから。</p>
         <p class="concept3">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
             足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
-    </div>
+    </section>
 
     <!-- セクション ABOUT US -->
-    <div class="section">
-        <div class="wrap-aboutus">
-            <img src="images/pc_about-100.jpg" alt="３つのコーヒー" class="コーヒー３つ">
-            <div class="boxaboutus">
+    <section class="section1">
+        <div class="about-wrap">
+            <img src="images/pc_about-100.jpg" alt="３つのコーヒー" class="about-left-img">
+            <div class="about-box">
                 <h2 class="title"><img src="images/about_us@2x.png" alt="ABOUT US"></h2>
-                <p class="小題名">私たちが提供する<br>
+                <p class="read">私たちが提供する<br>
                 こだわりのコーヒー</p>
-                <p class="text1">サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
+                <p class="about-text">サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- セクション MENU -->
-    <div class="section">
+    <section class="section1">
         <h2 class="title"><img src="images/menu@2x.png" alt="MENU"></h2>
         <div class="container">
-            <div class="item">
-                <img src="images/drink_sp@2x-100.jpg" alt="グラスに入ったカフェラテ">
-                <h3 class="メニュー名">Drink</h3>
-                <p class="text1">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+            <div class="card">
+                <img src="images/drink_sp@2x-100.jpg" alt="グラスに入ったカフェラテ" class="menu-img">
+                <h3 class="menu">Drink</h3>
+                <p class="menu-text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+            </div>
+            <div class="card">
+                <img src="images/pc_menu_food-100.jpg" alt="一つのお皿にのったパスタとパン" class="menu-img">
+                <h3 class="menu">Food</h3>
+                <p class="menu-text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+            </div>
+            <div class="card">
+                <img src="images/pc_menu_sweets-100.jpg" alt="お皿にのったチーズケーキ" class="menu-img">
+                <h3 class="menu">Sweets</h3>
+                <p class="menu-text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
             </div>
         </div>
+    </section>
 
+    <!-- セクション GALLERY -->
+    <section class="section1">
+        <h2 class="title"><img src="images/gallery@2x.png" alt="GALLERY"></h2>
+        <div class="slider-gallery">
+        <img src="images/pc_gallary_05-100.jpg" alt="賑わっている店内の様子" class="gallery-img">
+        <img src="images/pc_gallary_04-100.jpg" alt="お皿に入ったコーヒー豆" class="gallery-img">
+        <img src="images/pc_gallary_03-100.jpg" alt="落ち着いた店内の様子" class="gallery-img">
+        <img src="images/pc_gallary_02-100.jpg" alt="おしゃれな内装" class="gallery-img">
+        <img src="images/pc_gallary_01-100.jpg" alt="ラテアートを作っているところ" class="gallery-img">
+        </div>
+</section>
 
+<!-- セクション EVENT -->
+<section class="section1">
+    <h2 class="title"><img src="images/event@2x.png" alt="EVENT"></h2>
+    <div class="event-box">
+        <div class="event-text-box">
+            <P class="event-data">2020.06.23</P>
+            <p class="event-text">7月はイベント出店のため0/0お休みします</p>
+        </div>
+        <div class="event-text-box">
+            <P class="event-data">2020.03.15</P>
+            <p class="event-text">春の新商品新発売。話題のあのブランドとコラボ</p>
+        </div>
+        <div class="event-text-box">
+            <P class="event-data">2020.02.06</P>
+            <p class="event-text">コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
+        </div>
     </div>
+</section>
+
+<!-- セクション ACCESS -->
+<section class="section1">
+    <h2 class="title"><img src="images/access@2x.png" alt="ACCESS"></h2>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.2764822730464!2d139.7047693110587!3d35.64555917248447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b40c1000001%3A0xf21b512300945656!2sJANAI%20COFFEE!5e0!3m2!1sja!2sjp!4v1741936410042!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- セクション フッター -->
+<section class="section2">
+    <div class="footer-wrap">
+        <img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE" class="footer-logo">
+        <div class="footer-textbox">
+                <p class="footer-text">OPEN 18:00 / CLOSE 24:00</p>
+                <p class="footer-text">〒150-0022</p>
+                <p class="footer-text">東京都渋谷区東京南123デザインビルB1</p>
+                <p class="footer-text">MAIL：info@designcafe.tokyo</p>
+        </div>
+    </div>
+    <p class="copyright">© 2021 DESIGN CAFE</p>
+</section>
+
+
+
+
+
+<script>
+    $(function(){
+        $('.hamburger').on('click',function(){
+            $('.hamburger').toggleClass('open');
+            $('.sp-nav').fadeToggle();
+        });
+    });
+</script>
+
+
 </body>
 </html>
