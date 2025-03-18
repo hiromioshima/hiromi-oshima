@@ -107,21 +107,23 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 /* セクション コンセプト */
 .section1{
     background: #e8d9bf;
-    text-align: center;
     padding-top: 100px;
 }
 .concept1{
     font-size: 30px;
+    text-align: center;
 }
 .concept2{
     font-size: 82px;
     margin-top: 50px;
     line-height: 1.17;
+    text-align: center;
 }
 .concept3{
     font-size: 23px;
     margin-top: 50px;
     line-height: 1.65;
+    text-align: center;
 }
 
 /* セクション ABOUT US */
@@ -135,11 +137,17 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     width: 50%;
     border-bottom-right-radius: 50px;
 }
+.title-aboutus img{
+    height: 78px;
+}
+.title{
+    text-align: center;
+}
 .title img{
     height: 78px;
 }
+
 .about-box{
-    text-align: left;
     margin-top: 60px;
     width: 41%;
 }
@@ -163,13 +171,13 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     justify-content: space-between;
 }
 .card{
-    text-align: left;
     width: 30%;
 }
 
 .menu-img{
     width: 100%;
     border-top-right-radius: 50px;
+
 }
 .menu{
     color: #d30202;
@@ -202,7 +210,8 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     padding-top: 40px;
     padding-left: 162px;
     padding-bottom: 40px;
-    border:solid 3.68px #4f260b
+    border:solid 3.68px #4f260b;
+    box-sizing: border-box;
 }
 
 .event-text-box{
@@ -218,11 +227,12 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 .event-text{
     font-size: 23px;
     line-height: 1.95;
+    text-decoration: underline;
 }
 
 /* セクション Access */
-.map{
-    max-width: 100%;
+.map iframe{
+    width: 100%;
     height: 470px;
     margin-top: 46px;
 }
@@ -258,9 +268,9 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 .circle-btn{
     width: 125px;
     text-align: right;
-    margin-right: 310px;
-    margin-bottom: 230px;
-    
+    position:fixed;
+    bottom:20px;
+    right:20px;
 }
 
 
