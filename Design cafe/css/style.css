@@ -68,6 +68,7 @@ body{
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .logo{
@@ -103,12 +104,44 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     display: none;
 }
 
+.slick-dots{
+    bottom: 25px;
+}
 
-/* セクション コンセプト */
+.slick-dots li.slick-active button::before{
+    color: #fff;
+}
+
+.slick-dots li button:before{
+    color: #fff;
+}
+
+/* スライダーの元の場所にあった・・の余白を消す */
+.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+
+
+/* セクション */
 .section1{
     background: #e8d9bf;
     padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+.section2{
+    background: #e8d9bf;
+    padding-top: 100px;
+}
+.section3{
+    background: #fff;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* セクション コンセプト */
 .concept1{
     font-size: 30px;
     text-align: center;
@@ -238,11 +271,6 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 }
 
 /* セクション footer */
-.section2{
-    background: #fff;
-    text-align: center;
-    padding-top: 80px;
-}
 .footer-wrap{
     max-width: 1000px;
     display: flex;
@@ -286,6 +314,7 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         right: 20px;
         height: 33px;
         cursor: pointer;
+        z-index: 1000;
     }
     .hamburger span{
         display: block;
