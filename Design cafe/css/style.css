@@ -167,15 +167,17 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     display: flex;
     justify-content: space-between;
 }
-.about-left-img{
-    width: 50%;
+.pc-about-left-img{
     border-bottom-right-radius: 50px;
 }
 .title-aboutus img{
     height: 78px;
 }
-.title-aboutus-sp img{
+.title-aboutus-sp{
     display: none;
+}
+.picture{
+    width: 50%;
 }
 .title{
     text-align: center;
@@ -306,130 +308,6 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 }
 
 
-/* モバイル 767px */
-@media screen and (max-width: 767px){
-
-/* sp コンセプト */
-.concept1{
-        font-size: 17px;
-        text-align: center;
-}
-.concept2{
-        font-size: 38px;
-        margin-top: 30px;
-        line-height: 1.15;
-        text-align: center;
-}
-.concept3{
-        font-size: 14px;
-        margin-top: 16px;
-        line-height: 1.87;
-        text-align: center;
-}
-/* sp ABOUT US */
-.about-wrap{
-    display: block;
-    margin: 0 auto;
-}
-.about-sp-img{
-    width: 100%;
-}
-.title-aboutus img{
-    display: none;
-}
-.about-box{
-    margin-top: 34px;
-    margin: 0 auto;
-    width: 90%;
-}
-.read{
-    font-size: 36px;
-    line-height: 1.25;
-    margin-top: 36px;
-}
-.about-text{
-    line-height: 1.75;
-    margin-top: 30px;
-    font-size: 16px;
-}
-
-/* sp MENU */
-.container{
-    max-width: 767px;
-    display: block;
-    margin: 0 auto;
-}
-.card{
-    width:96%;
-    margin: 0 auto;
-    margin-top: 60px;
-}
-.menu{
-    font-size: 40px;
-    margin-top: -14px;
-    margin-left: 12px;
-}
-
-/* sp GALLERY; */
-.slider-gallery{
-    margin-top: 26px;
-    display: flex;
-}
-.gallery-img{
-    width: 100%;
-}
-
-/* sp EVENT */
-.event-box{
-    margin: 0 auto;
-    margin-top: 20px;
-    padding-top: 4px;
-    padding-left: 30px;
-    padding-bottom: 34px;
-    box-sizing: border-box;
-}
-
-.event-text-box{
-    display:block
-}
-
-.event-data{
-    font-size: 16px;
-    line-height: 1.4;
-    margin-right: 30px;
-    margin-top: 30px;
-}
-
-.event-text{
-    font-size: 16px;
-    line-height: 1;
-    text-decoration: underline;
-}
-
-/* sp フッター */
-.footer-wrap{
-    padding: 10px;
-    display: block
-}
-
-.footer-logo{
-    display: block;
-    margin-right: auto;
-    height: 50px;
-    }
-    .footer-textbox{
-        margin-top: 34px;
-        text-align: left;
-    }
-    .footer-text{
-        font-size: 18px;
-        line-height: 1.95;
-    }
-
-
-}
-
-
 
 /* ハンバーガーメニュー */
 @media screen and (max-width:1100px) {
@@ -542,6 +420,138 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     line-height: 1.75;
     margin-top: 30px;
     font-size: 14px;
+}
+
+}
+
+/* モバイル 767px */
+@media screen and (max-width: 767px){
+
+.title-aboutus-sp{
+    display: block;
+}
+
+ /* sp コンセプト */
+.concept1{
+    font-size: 17px;
+    text-align: center;
+}
+.concept2{
+    font-size: 38px;
+    margin-top: 30px;
+    line-height: 1.15;
+    text-align: center;
+}
+.concept3{
+    font-size: 14px;
+    margin-top: 16px;
+    line-height: 1.87;
+    text-align: center;
+}
+   /* sp ABOUT US */
+.title-aboutus-sp-img{
+    display: block;
+    margin: 0 auto;
+    height: 78px;
+    
+}
+.about-wrap{
+    display: block;
+    margin: 0 auto;
+}
+.about-sp-img{
+    width: 100%;
+}
+.title-aboutus img{
+    display: none;
+}
+.about-box{
+    margin-top: 34px;
+    margin: 0 auto;
+    width: 90%;
+}
+.read{
+    font-size: 36px;
+    line-height: 1.25;
+    margin-top: 36px;
+}
+.about-text{
+    line-height: 1.75;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+   /* sp MENU */
+.container{
+    max-width: 767px;
+    display: block;
+    margin: 0 auto;
+}
+.card{
+    width:96%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.menu{
+    font-size: 40px;
+    margin-top: -14px;
+    margin-left: 12px;
+}
+
+   /* sp GALLERY; */
+.slider-gallery{
+    margin-top: 26px;
+    display: flex;
+}
+.gallery-img{
+    width: 100%;
+}
+
+   /* sp EVENT */
+.event-box{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 4px;
+    padding-left: 30px;
+    padding-bottom: 34px;
+    box-sizing: border-box;
+}
+
+.event-text-box{
+    display:block
+}
+
+.event-data{
+    font-size: 16px;
+    line-height: 1.4;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.event-text{
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+   /* sp フッター */
+.footer-wrap{
+    padding: 10px;
+    display: block
+}
+
+.footer-logo{
+    display: block;
+    margin-right: auto;
+    height: 50px;
+}
+.footer-textbox{
+    margin-top: 34px;
+    text-align: left;
+}
+.footer-text{
+    font-size: 18px;
+    line-height: 1.95;
 }
 
 }

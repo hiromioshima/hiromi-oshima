@@ -73,10 +73,10 @@
     <!-- セクション ABOUT US -->
     <section class="section1" id="ABOUT">
         <div class="about-wrap" >
-            <h2 class="title-aboutus-sp"><img src="images/about_us@2x.png" alt="ABOUT US"></h2>
+            <h2 class="title-aboutus-sp"><img src="images/about_us@2x.png" alt="ABOUT US" class="title-aboutus-sp-img"></h2>
                 <picture>
                     <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
-                    <img src="images/pc_about-100.jpg" alt="３つのコーヒー" >
+                    <img src="images/pc_about-100.jpg" alt="３つのコーヒー" class="pc-about-left-img">
                 </picture>
             <div class="about-box">
                 <h2 class="title-aboutus"><img src="images/about_us@2x.png" alt="ABOUT US"></h2>
@@ -187,6 +187,13 @@
             dots: true,
             autoplaySpeed: 2000,
             arrows: false,
+            slidesToShow: 5,
+            responsive: [{
+        breakpoint: 767,
+        settings: {
+        slidesToShow: 1
+        }
+    }]
         })
     });
 </script>
