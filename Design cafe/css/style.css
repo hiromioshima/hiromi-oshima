@@ -142,7 +142,7 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     padding-right: 10px;
 }
 
-/* セクション コンセプト */
+/* セクション concept */
 .concept1{
     font-size: 30px;
     text-align: center;
@@ -159,6 +159,9 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     line-height: 1.65;
     text-align: center;
 }
+.sp-br{
+    display: none;
+}
 
 /* セクション ABOUT US */
 .about-wrap{
@@ -166,6 +169,7 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .pc-about-left-img{
     border-bottom-right-radius: 50px;
@@ -187,8 +191,10 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 }
 
 .about-box{
-    margin-top: 60px;
-    width: 41%;
+    align-items: center;
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 0%;
 }
 .read{
     font-size: 44px;
@@ -236,9 +242,7 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     margin-top: 26px;
     display: flex;
 }
-.gallery-img{
-    width: 20%;
-}
+
 
 /* セクション EVENT */
 .event-box{
@@ -246,23 +250,22 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 40px;
-    padding-top: 40px;
-    padding-left: 162px;
-    padding-bottom: 40px;
+    padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
     border:solid 3.68px #4f260b;
     box-sizing: border-box;
 }
-
 .event-text-box{
     display: flex;
+    margin: 0 auto;
 }
-
 .event-data{
     font-size: 23px;
     line-height: 1.95;
     margin-right: 56px;
 }
-
 .event-text{
     font-size: 23px;
     line-height: 1.95;
@@ -317,7 +320,7 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     .hamburger{
         display: block;
         position: absolute;
-        top: 10px;
+        top: 22px;
         right: 20px;
         height: 33px;
         cursor: pointer;
@@ -388,7 +391,7 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-/* 1100px以下 セクション コンセプト */
+/* 1100px以下 セクション concept */
 .concept1{
     font-size: 26px;
     text-align: center;
@@ -406,11 +409,14 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     text-align: center;
 }
 
-/* セクション ABOUT US */
+/* 1100px以下 セクション ABOUT US */
 .about-box{
     margin-left: 10px;
     margin-right: 10px;
+    padding-left: 4%;
+    padding-right: 0%;
 }
+
 .read{
     font-size: 30px;
     line-height: 1.25;
@@ -421,17 +427,21 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     margin-top: 30px;
     font-size: 14px;
 }
-
 }
 
-/* モバイル 767px */
+/* sp 767px */
 @media screen and (max-width: 767px){
 
 .title-aboutus-sp{
     display: block;
 }
 
- /* sp コンセプト */
+ /* sp concept */
+.section1{
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .concept1{
     font-size: 17px;
     text-align: center;
@@ -443,17 +453,21 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     text-align: center;
 }
 .concept3{
-    font-size: 14px;
-    margin-top: 16px;
+    font-size: 16px;
+    margin-top: 22px;
     line-height: 1.87;
     text-align: center;
 }
-   /* sp ABOUT US */
-.title-aboutus-sp-img{
+
+.sp-br{
     display: block;
+}
+   /* sp ABOUT US */
+.title-aboutus-sp1{
+    height: 46px;
     margin: 0 auto;
-    height: 78px;
-    
+    display: block;
+padding-bottom: 18px;
 }
 .about-wrap{
     display: block;
@@ -464,6 +478,9 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 }
 .title-aboutus img{
     display: none;
+}
+.pc-about-left-img{
+    border-bottom-right-radius: 0;
 }
 .about-box{
     margin-top: 34px;
@@ -487,20 +504,25 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     display: block;
     margin: 0 auto;
 }
+.title img{
+    height: 46px;
+    padding-bottom: 22px;
+}
 .card{
-    width:96%;
+    width:90%;
     margin: 0 auto;
-    margin-top: 60px;
+    padding-bottom: 60px;
 }
 .menu{
     font-size: 40px;
-    margin-top: -14px;
-    margin-left: 12px;
 }
 
-   /* sp GALLERY; */
+   /* sp gallery */
+.section2{
+    padding-top: 34px;
+}
 .slider-gallery{
-    margin-top: 26px;
+    margin-top: 0px;
     display: flex;
 }
 .gallery-img{
@@ -509,37 +531,47 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 
    /* sp EVENT */
 .event-box{
+    max-width: 90%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 0px;
     padding-top: 4px;
     padding-left: 30px;
     padding-bottom: 34px;
     box-sizing: border-box;
 }
-
 .event-text-box{
     display:block
 }
-
 .event-data{
     font-size: 16px;
     line-height: 1.4;
     margin-right: 30px;
     margin-top: 30px;
 }
-
 .event-text{
+    width: 300px; /* 要素の横幅を指定 */
+    white-space: nowrap; /* 横幅のMAXに達しても改行しない */
+    overflow: hidden; /* 溢れた部分を隠す */
+    text-overflow: ellipsis; /* 「…」と省略 */
+    -webkit-text-overflow: ellipsis; /* Safari用 */
+    -o-text-overflow: ellipsis; /* Opera用 */
     font-size: 16px;
     line-height: 1;
     text-decoration: underline;
 }
 
-   /* sp フッター */
-.footer-wrap{
-    padding: 10px;
-    display: block
+/* sp　アクセス */
+.map iframe{
+    height: 190px;
+    margin-top: 0px;
 }
-
+   /* sp フッター */
+.section3{
+    padding-top: 50px;
+}
+.footer-wrap{
+    display: block;
+}
 .footer-logo{
     display: block;
     margin-right: auto;
@@ -553,5 +585,11 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     font-size: 18px;
     line-height: 1.95;
 }
-
+.copyright{
+    padding-top: 42px;
+    padding-bottom: 30px;
+}
+.circle-btn{
+    width: 100px;
+}
 }
