@@ -1,0 +1,365 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #131D3F;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+body{
+    background: #F9F8F6;
+}
+
+
+/* pc ヘッダー */
+.pc_header{
+    background: #545D7B;
+    max-width: 100%;
+    height: 80px;
+}
+
+
+.logo{
+    width: 46px;
+    top: 10px;
+    left: 83px;
+    position: absolute;
+}
+
+.pc_nav{
+    margin: 0 auto;
+}
+.pc_nav ul{
+    display: flex;
+    margin: 0 auto;
+    width: 570px;
+    justify-content: space-between;
+    color: #f9f8f6;
+    
+}
+
+.pc-nav li{
+    margin-right: 54px;
+    text-align: center;
+    width: 105px;
+    color: #f9f8f6;
+    font-size: 14px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+            "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+
+/* pc ファーストビュー */
+.fv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    align-items: center;
+}
+.logo_wrap1{
+    width: 24px;
+    height: 108px;
+    margin-left: 0.7%;
+    margin-right: 0.7%;
+}
+
+.instagram_logo{
+    width: 24px;
+    
+}
+.x_lpgo{
+    width: 24px;
+}
+.main_visual{
+    width: 1000px;
+    position: relative;
+}
+.catchphrase_box{
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+.catchphrase_ja{
+    font-size: 24px;
+    color: #F9F8F6;
+}
+.catchphrase_en{
+    font-size: 16px;
+    margin-top: 8px;
+    color: #F9F8F6;
+}
+
+/* pc　セクション */
+.section1{
+padding-top: 180px;
+padding-left: 10px;
+padding-right: 10px;
+margin: 0 auto;
+}
+.section2{
+    padding-top: 200px;
+}
+.section3{
+    padding-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.section4{
+    background-image: url(../Links/sozai/bouquet.jpg);
+    background-size: 100%;
+    height: 654px;
+    padding-top: 180px;
+    margin-top: 200px;
+}
+
+/* pc コンセプト */
+.concept_word1{
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-align: center
+}
+.concept_word2{
+    font-size: 14px;
+    margin-top: 40px;
+    line-height: 200%;
+    letter-spacing: 0.4em;
+    text-align: center
+}
+.scroll_text{
+    margin-top: 70px;
+    white-space:nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.scroll_text ul{
+    display: flex;
+    align-items: center;
+    animation: ticker 180s linear infinite;
+}
+.scroll_text li{
+    color: #545D7B;
+    opacity: 0.2;
+    font-size: 96px;
+    margin-right: 20px;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* pc アバウト */
+.about_wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile_img{
+    width: 424px;
+}
+.about_box{
+    width: 500px;
+}
+.h2_left{
+    font-size: 48px;
+    color: #545D7B;
+
+}
+.name{
+    display: flex;
+    margin-top: 48px;
+}
+.name_ja{
+    font-size: 20px;
+}
+.name_en{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.profile_text{
+    font-size: 14ox;
+    line-height: 170%;
+    letter-spacing: 6%;
+    margin-top: 24px;
+}
+/* ボタン */
+a.btn_03 {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 120px;
+	margin: 0 0 0 auto;
+    margin-top: 48px;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 1px solid #545D7B;
+	color: #545D7B;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+a.btn_03:hover {
+	color: #F9F8F6;
+	background: #545D7B;
+}
+
+/* pc ワークス */
+.h2_center{
+    font-size: 48px;
+    text-align: center;
+    color: #545D7B;
+}
+.slider_pc img{
+    margin-top: 54px;
+    width: 300px;
+}
+.slider_sp img{
+    margin-top: 40px;
+    width: 300px;
+}
+.works_btn_box{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* pc コンタクト */
+.h2_white{
+    font-size: 48px;
+    text-align: center;
+    color: #f9f8f6;
+}
+.contact_button{
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 500px;
+	margin: 0 auto;
+    margin-top: 80px;
+	padding: 2rem 4rem;
+	font-weight: bold;
+	border: 1px solid #F9F8F6;
+	color: #545D7B;
+    font-size: 16px;
+    background-color: #F9F8F6;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+
+
+/* pc フッター */
+.wrapping_tape{
+    margin-top: 32px;
+    margin: 0 auto;
+}
+
+.pc_footer{
+    margin: 0 auto;
+}
+.pc_nav_footer ul{
+    width: 476px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.pc_nav_footer li{
+    margin-right: 54px;
+    text-align: center;
+    width: 105px;
+    font-size: 14px;
+}
+.logo_wrap2{
+    width: 140px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.small{
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/* アバウトページ */
+.about_wrap{
+    margin-top: 64px;
+}
+.skill_wrap{
+    margin-top: 64px;
+    width: 1000px;
+    display: flex;
+}
+.web_design_box{
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+.web_design_box img{
+    width: 120px;
+    text-align: center;
+}
+.skill_box_line{
+    margin-top: 16px;
+    opacity: 0.3;
+}
+.ai_box{
+    display: flex;
+}
+.ai_box img{
+    width: 42px;
+}
+.ai_box p{
+    margin-left: 26px;
+}
+

@@ -53,6 +53,9 @@ body{
 }
 
 /* ヘッダー */
+html {
+    scroll-behavior: smooth;
+}
 .header{
     position: relative;
 }
@@ -256,6 +259,8 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     padding-bottom: 4%;
     border:solid 3.68px #4f260b;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 .event-text-box{
     display: flex;
@@ -435,7 +440,9 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
 .title-aboutus-sp{
     display: block;
 }
-
+.logo{
+    width: 187.5px;
+}
  /* sp concept */
 .section1{
     padding-top: 60px;
@@ -549,7 +556,6 @@ padding-bottom: 18px;
     margin-top: 30px;
 }
 .event-text{
-    width: 300px; /* 要素の横幅を指定 */
     white-space: nowrap; /* 横幅のMAXに達しても改行しない */
     overflow: hidden; /* 溢れた部分を隠す */
     text-overflow: ellipsis; /* 「…」と省略 */
