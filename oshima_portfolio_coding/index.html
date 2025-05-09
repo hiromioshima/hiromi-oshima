@@ -20,8 +20,11 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 
+<!-- Googleフォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 <!-- pc　ヘッダー -->
@@ -51,9 +54,11 @@
             <p class="catchphrase_en">I've prepared a special bouquet for you.</p>
         </div>
     </div>
-    <div class="scroll_mark">SCROLL
-</div>
-
+    <div class="scroll_mark">
+        <div class="scroll">
+            <p>scroll</p>
+        </div>
+    </div>
 </div>
 
 <!-- pc コンセプト -->
@@ -92,7 +97,7 @@
         <div class="profile_img"><img src="Links/sozai/profile.jpg" alt=""></div>
         <div class="about_box">
             <h2 class="h2_left">ABOUT</h2>
-            <div class="name">
+            <div class="name1">
                 <p class="name_ja">加藤 宏美</p>
                 <p class="name_en">HIROMI OSHIMA</p>
             </div>
@@ -108,21 +113,57 @@
 <!-- pc ワークス -->
 <section class="section2">
     <h2 class="h2_center">WORKS</h2>
-    <div class="slider_pc">
-        <div><img src="Links/zisseki/pc_hair.jpg" alt="LIFE hair designサイトの画像"></div>
-        <div><img src="Links/zisseki/pc_cafe.jpg" alt="Fikuma cakeサイトの画像"></div>
-        <div><img src="Links/zisseki/pc_animal.jpg" alt="FIKUMA動物病院のサイト画像"></div>
-        <div><img src="Links/zisseki/pc_cafe.jpg" alt="DESIGN CAFEサイトの画像"></div>
-        <div><img src="Links/zisseki/pc_works.jpg" alt="WORKERSサイトの画像"></div>
-        <div><img src="Links/zisseki/pc_clinic.jpg" alt="デザインクリニックサイトの画像"></div>
+    <div class="top_mockup_wrap">
+        <div class="top_mockup">
+            <img src="Links/zisseki/pc_hair.jpg" alt="LIFE hair designサイトの画像" />
+            <div class="mask">
+                <div class="caption">LIFE hair design</div>
+            </div>
+        </div>
+        <div class="top_mockup">
+            <img src="Links/zisseki/pc_cake.jpg" alt="Fikuma cakeサイトの画像" />
+            <div class="mask">
+                <div class="caption">Fikuma cake</div>
+            </div>
+        </div>
+        <div class="top_mockup">
+            <img src="Links/zisseki/pc_cafe.jpg" alt="DESIGN CAFEサイトの画像" />
+            <div class="mask">
+                <div class="caption">DESIGN CAFE</div>
+            </div>
+        </div>
+        <div class="top_mockup">
+            <img src="Links/zisseki/pc_works.jpg" alt="WORKERSサイトの画像" />
+            <div class="mask">
+                <div class="caption">WORKERS</div>
+            </div>
+        </div>
     </div>
-    <div class="slider_sp">
-        <div><img src="Links/zisseki/sp_ice1.jpg" alt="アイスクリームのバナー画像"></div>
-        <div><img src="Links/zisseki/sp_burger1.jpg" alt="デラックスバーガーのバナー画像"></div>
-        <div><img src="Links/zisseki/sp_sale.jpg" alt="SALEのバナー画像"></div>
-        <div><img src="Links/zisseki/sp_black.jpg" alt="ブラックフラーデーのバナー画像"></div>
-        <div><img src="Links/zisseki/sp_salad.jpg" alt="サラダのバナー画像"></div>
-        <div><img src="Links/zisseki/sp_niku.jpg" alt="東京牛のバナー画像"></div>
+    <div class="top_mockup_wrap">
+        <div class="top_mockup">
+            <img src="Links/zisseki/sp_ice1.jpg" alt="アイスクリームのバナー画像" />
+            <div class="mask">
+                <div class="caption">ICE CREAM</div>
+            </div>
+        </div>
+        <div class="top_mockup">
+            <img src="Links/zisseki/sp_burger1.jpg" alt="デラックスバーガーのバナー画像" />
+            <div class="mask">
+                <div class="caption">デラックスバーガー</div>
+            </div>
+        </div>
+        <div class="top_mockup">
+            <img src="Links/zisseki/sp_sale.jpg" alt="SALEのバナー画像" />
+            <div class="mask">
+                <div class="caption">SALE</div>
+            </div>
+        </div>
+        <div class="top_mockup">
+            <img src="Links/zisseki/sp_black.jpg" alt="ブラックフラーデーのバナー画像" />
+            <div class="mask">
+                <div class="caption">BLACK Friday</div>
+            </div>
+        </div>
     </div>
     <div class="works_btn_box">
         <a href="" class="btn_03">VIER MORE</a>
@@ -134,11 +175,6 @@
     <h2 class="h2_white">CONTACT</h2>
     <a href="" class="contact_button">お問い合わせをする</a>
 </section>
-
-<!-- pc ラッピングテープ -->
-<div class="wrapping_tape">
-    <img src="Links/sozai/wrapping_tape.png" alt="ラッピングテープ">
-</div>
 
 <!-- pc フッター -->
 <footer class="pc_footer">
@@ -152,59 +188,16 @@
         </ul>
     </nav>
     <div class="logo_wrap2">
-        <div class="instagram_logo"><img src="Links/sozai/instagram_logo.png" alt=""></div>
-        <div class="x_lpgo"><img src="Links/sozai/x_logo.png" alt=""></div>
+        <div class="instagram_logo2"><img src="Links/sozai/instagram_logo.png" alt=""></div>
+        <div class="x_lpgo2"><img src="Links/sozai/x_logo.png" alt=""></div>
     </div>
-    <small>©RM DESIGN PORTFOLIO</small>
+    <p class="copyright"><small>©RM DESIGN PORTFOLIO</small></p>
 </footer>
 
 
 
 <!-- ワークスのスライダー -->
 <script>
-$(function(){
-    $('.slider_pc').slick({
-      autoplay: true, //自動でスクロール
-      autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
-      speed: 5000, //スライドが流れる速度を設定
-      cssEase: "linear", //スライドの流れ方を等速に設定
-      slidesToShow: 4, //表示するスライドの数
-      swipe: false, // 操作による切り替えはさせない
-      arrows: false, //矢印非表示
-      pauseOnFocus: false, //スライダーをフォーカスした時にスライドを停止させるか
-      pauseOnHover: false, //スライダーにマウスホバーした時にスライドを停止させるか
-      responsive: [
-        {
-          breakpoint: 750,
-          settings: {
-            slidesToShow: 3, //画面幅750px以下でスライド3枚表示
-          }
-        }
-      ]
-    });
-  });
-
-$(function(){
-    $('.slider_sp').slick({
-      autoplay: true, //自動でスクロール
-      autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
-      speed: 5000, //スライドが流れる速度を設定
-      cssEase: "linear", //スライドの流れ方を等速に設定
-      slidesToShow: 4, //表示するスライドの数
-      swipe: false, // 操作による切り替えはさせない
-      arrows: false, //矢印非表示
-      pauseOnFocus: false, //スライダーをフォーカスした時にスライドを停止させるか
-      pauseOnHover: false, //スライダーにマウスホバーした時にスライドを停止させるか
-      responsive: [
-        {
-          breakpoint: 750,
-          settings: {
-            slidesToShow: 3, //画面幅750px以下でスライド3枚表示
-          }
-        }
-      ]
-    });
-  });
 </script> 
 
 

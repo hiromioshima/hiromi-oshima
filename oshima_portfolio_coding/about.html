@@ -20,6 +20,10 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 
+<!-- Googleフォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 </head>
 
 
@@ -41,10 +45,10 @@
 <!-- アバウト -->
 <section class="section1">
         <h2 class="h2_center">ABOUT</h2>
-        <div class="about_wrap">
+        <div class="about_wrap2">
             <div class="profile_img"><img src="Links/sozai/profile.jpg" alt=""></div>
             <div class="about_box">
-                <div class="name">
+                <div class="name2">
                     <p class="name_ja">加藤 宏美</p>
                     <p class="name_en">HIROMI OSHIMA</p>
                 </div>
@@ -54,23 +58,17 @@
                     大型歯科医院に就職し、外来兼訪問歯科衛生士として約6年勤務。
                     現在はWebデザイナーとして活動中。
                     </p>
-                <p class="profile_text2">好きなこと</p>
-                <div class="likes_box">
-                    <p>旅行</p>
-                    <p>温泉旅行</p>
-                </div>
-                <div class="likes_box">
-                    <p>映画</p>
-                    <p>Shutter Island・Inception</p>
-                </div>
-                <div class="likes_box">
-                    <p>音楽</p>
-                    <p>King Gnu</p>
-                </div>
-                <div class="likes_box">
-                    <p>マンガ</p>
-                    <p>キングダム・呪術廻戦</p>
-                </div>
+                    <p class="like_text">好きなこと</p>
+                    <dl class="like_box">
+                        <dt>旅行</dt>
+                        <dd>温泉旅行</dd>
+                        <dt>映画</dt>
+                        <dd>Shutter Island・Inception</dd>
+                        <dt>音楽</dt>
+                        <dd>King Gnu</dd>
+                        <dt>漫画</dt>
+                        <dd>キングダム・呪術廻戦</dd>
+                    </dl>
 </section>
 
 <!-- pc スキル -->
@@ -79,18 +77,64 @@
     <div class="skill_wrap">
         <div class="web_design_box">
             <img src="Links/sozai/design_logo.png" alt="web designのイラスト">
-            <p>WEBサイト・LPデザイン、バナー、グラフィックを制作することができます。情報設計や機能性など、ユーザー側にも配慮したデザインを心掛けています。</p>
+            <div class="web_design_textbox">WEBサイト・LPデザイン、バナー、グラフィックを制作することができます。情報設計や機能性など、ユーザー側にも配慮したデザインを心掛けています。</div>
             <hr class="skill_box_line">
-            <div class="ai_box">
+            <div class="tool_box">
                 <img src="Links/sozai/Ai_logo.png" alt="イラストレーターのロゴ">
                 <p>WEBサイト・LPデザイン、バナー、グラフィックの制作ができます。</p>
             </div>
+                <hr class="tool_box_line">
+            <div class="tool_box">
+                <img src="Links/sozai/ps_logo.png" alt="イラストレーターのロゴ">
+                <p>写真の補正、レタッチ、合成、切り抜き、Webデザインの制作ができます。</p>
+            </div>
+            <hr class="tool_box_line">
+            <div class="tool_box">
+                <img src="Links/sozai/figuma_logo.png" alt="イラストレーターのロゴ">
+                <p>ワイヤーフレーム、WEBサイトデザイン、プロトタイプ、プレゼン資料の制作ができます。</p>
+            </div>
+            <hr class="tool_box_line">
+        </div>
+
+        <div class="web_design_box">
+            <img src="Links/sozai/coding_logo.png" alt="コーディングのイラスト">
+            <div class="web_design_textbox">HTML/CSSを用いてデザインを忠実に再現することができます。また、Javascript/jQueryを用いてサイトに動きをつけることも可能です。どのデバイスで見ても崩れることがないサイト制作をしています。</div>
+            <hr class="skill_box_line">
+            <div class="tool_box">
+                <img src="Links/sozai/Ai_logo.png" alt="イラストレーターのロゴ">
+                <p>シンプルな統一感のあるコーディング行うことができます。</p>
+            </div>
+                <hr class="tool_box_line">
+            <div class="tool_box">
+                <img src="Links/sozai/ps_logo.png" alt="イラストレーターのロゴ">
+                <p>JavaScriptを理解し、jQuery使用して動きを加えることができます。</p>
+            </div>
+            <hr class="tool_box_line">
         </div>
     </div>
+</section>
+
+<!-- キャリア -->
+<section class="section1">
+    <h2 class="h2_center">STRENGTHS</h2>
+    <div class="strengths_wrap">
+        <dl>
+            <dt>コミュニケーション力</dt>
+            <dd>前職での歯科医院勤務では、歯科医師や歯科技工士はもちろん、患者様に関わるご家族様やケアマネージャー、介護福祉士など様々な職種の方と連携を図って治療を行っておきました。
+                その経験で培ったコミュニケーション能力を活かして、クライアント様のニーズを的確に理解し、満足度を高められるように貢献できます。</dd>
+            <dt>責任感</dt>
+            <dd>与えられた業務を正確かつ迅速に遂行します。
+                また物事を自責で捉え、チーム全体の組織のために常に自分にできることを模索し実践してすることができます。</dd>
+            <dt>臨機応変な対応</dt>
+            <dd>常に向上心を持って働くことをができます。
+                進化し続けるWeb業界で、技術やトレンドを常にアップデートし続け、最新の技術や手法を習得することに努力を惜しみません。
+                これらの技術を習得し、より効率的に、より魅力的なWebサイト制作をいたします。</dd>
+          </dl>
+    </div>
+    
 
 
 </section>
-
 
 
 
