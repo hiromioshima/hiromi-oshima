@@ -182,17 +182,15 @@ body{
 .section1{
     max-width: 70%;
     padding-top: 200px;
-    padding-left: 10px;
-    padding-right: 10px;
     margin: 0 auto;
 }
 .section2{
     padding-top: 200px;
 }
 .section3{
-    padding-top: 200px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 100px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 .section4{
     background: url(../Links/sozai/bouquet.jpg)no-repeat center center/cover;
@@ -248,7 +246,6 @@ body{
 
 /* pc アバウト */
 .about_wrap{
-    max-width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -555,7 +552,6 @@ a.btn_03:hover {
 .filter-item {
     display: flex;
     flex-wrap: wrap;
-    max-width: 80%;
     margin: 0 auto;
     justify-content: space-between;
 }
