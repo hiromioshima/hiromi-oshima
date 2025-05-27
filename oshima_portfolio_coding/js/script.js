@@ -1,3 +1,37 @@
+// ローディングアニメーション
+$(function () {
+  // ローダー終了
+  function end_loading() {
+    $('.loading').fadeOut(800);
+  }
+  // テキスト表示
+  function show_loading_logo() {
+    $('.loading_logo').fadeIn(400);
+  }
+  // テキスト非表示
+  function hide_loading_logo() {
+    $('.loading_logo').fadeOut(400);
+  }
+})
+
+  // タイマー処理
+  $(window).on('load', function () {
+    // 処理①
+    setTimeout(function () {
+      show_loading_logo();
+    }, 1000)
+    // 処理②
+    setTimeout(function () {
+      hide_loading_logo();
+    }, 3500)
+    // 処理③
+    setTimeout(function () {
+      end_loading();
+    }, 4500)
+  });
+
+
+
 // ハンバーガーメニュー
 $(function(){
         $('.hamburger,.sp-nav a').on('click',function(){

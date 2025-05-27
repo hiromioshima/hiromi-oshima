@@ -54,6 +54,26 @@ body{
 }
 
 
+/* ローディングアニメーション */
+.loading{
+    background-color: #545D7B;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading_logo{ */
+    width: 200px;
+    display: none;
+}
+
+
+
 /* pc ヘッダー */
 .sp-nav{
     display: none;
@@ -556,25 +576,6 @@ a.contact_button:hover {
     display: flex;
     align-items: flex-end;
 }
-.like_text{
-    margin-top: 32px;
-    font-size: 16px;
-}
-.like_box{
-        margin-top: 16px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-}
-.like_box dt {
-    width: 16%;
-    padding-bottom: 8px;
-}
-.like_box dd {
-    width: 70%;
-    padding-bottom: 8px;
-}
-
 .skill_wrap{
     margin-top: 64px;
     display: flex;
@@ -838,6 +839,9 @@ a.filter-list li {
 }
 
 /* 詳細ページ 詳細データ */
+.pc_bese_lower{
+    display: none;
+}
 .work_mockup_detail{
     margin: 0 auto;
     margin-top: 80px;
@@ -874,6 +878,9 @@ a.filter-list li {
     padding-right: 10px;
     line-height: 170%;
     font-size: 14px;
+}
+.work_mockup_detail_box_lower{
+    display: none;
 }
 
 /* ワークス詳細ページ　バナー */
@@ -1194,6 +1201,13 @@ input[name=question] {
 
 
 /* 1100px以下 アバウトページ */
+.about_wrap2{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 84px;
+}
 .skill_wrap{
     display: block;
 }
@@ -1256,6 +1270,62 @@ input[name=question] {
     width: 100%;
     margin: 0 auto;
 }
+.sp_mockup_img2{
+    display: none;
+}
+
+
+
+
+.pc_bese_lower{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: block;
+}
+.sp_mockup_img2_lower{
+    position: absolute;
+    width: 70%;
+    height: auto;
+    right: 10%;
+    top: 24%;
+    margin: 0 auto;
+}
+/* .sp_img2_lower{ */
+    overflow: hidden; /*拡大した時はみ出た部分を隠す*/
+}
+.sp_capture_box2_lower{
+    margin: 0 auto;
+    width: 88%;
+    height: 96%;
+    overflow: auto;
+    position: absolute;
+    top: 2%;
+    left: 6%;
+    border-radius: 27px;
+}
+.works_scroll_mark2{
+    position: absolute;
+    top: 33%;
+    right: 18%;
+}
+
+.works_scroll_mark2_lower{
+    position: absolute;
+    top: 10%;
+    right: 4%;
+}
+
+
+
+
+
+
+
+
+
+
 .banner_mockup_box{
     display: none;
 }
@@ -1522,9 +1592,12 @@ a.btn_01 {
 .sp_mockup_img2{
     width: 24%;
     right: -2%;
-
 }
-
+.works_scroll_mark2{
+    position: absolute;
+    top: 33%;
+    right: 4%;
+}
 
 /* sp フッター */
 .pc_nav_footer ul{
@@ -1542,6 +1615,14 @@ a.btn_01 {
     width: 80px;
     margin-top: 56px;
 }
+
+
+
+
+/* ローディング画像 */
+
+
+
 
 }
 
