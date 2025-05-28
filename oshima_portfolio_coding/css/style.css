@@ -67,8 +67,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.loading_logo{ */
-    width: 200px;
+.loading_logo{
+    width: 120px;
     display: none;
 }
 
@@ -681,7 +681,7 @@ a.contact_button:hover {
     max-width: 706px;
     margin: 0 auto;
     padding: 120px 0px 100px 0px;
-    gap: 4%;
+    gap: 2%;
 }
 .filter-list li {
     width: 140px;
@@ -690,10 +690,10 @@ a.contact_button:hover {
     background: #F9F8F6;
     border: 1px solid #545D7B;
     border-radius: 90px;
-    padding-top: 10px;
-    padding-bottom: 12px;
     cursor: pointer;
     transition: all 0.3s;
+    padding-top: 10px;
+    padding-bottom: 12px;
 }
 .filter-list li.is-active {
     background: #545D7B;
@@ -716,7 +716,6 @@ a.contact_button:hover {
 .works_list_mockup{
     width: 100%;
 }
-
 .data{
     display: flex;
     align-items: flex-start;
@@ -755,13 +754,6 @@ a.contact_button:hover {
 }
 
 /* pc ワークス詳細ページ webサイト */
-
-/* aにパディングつけれない */
-a.filter-list li {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
 .pc_mockup_img{
     position: relative;
 }
@@ -778,9 +770,6 @@ a.filter-list li {
     top: 7%;
     left: 12.4%;
 }
-
-
-
 
 
 
@@ -825,6 +814,9 @@ a.filter-list li {
     top: 2%;
     left: 6%;
     border-radius: 27px;
+}
+.sp_mockup_img2_lower{
+    display: none;
 }
 
 .works_scroll_mark{
@@ -884,15 +876,15 @@ a.filter-list li {
 }
 
 /* ワークス詳細ページ　バナー */
-.banner_mockup_box_sp{
-    display: none;
-}
 .banner_mockup_box{
     display: flex;
     margin: 0 auto;
     width: 90%;
     align-items: center;
     gap: 10%;
+}
+.banner_mockup_box_sp{
+    display: none;
 }
 .banner_mockup_img{
     width: 30%;
@@ -1102,10 +1094,12 @@ input[name=question] {
     width: 100%;
     background: #545D7B;
 }
+.ul_logo_wrap{
+    height: 100%;
+    justify-content: center;
+}
 .sp-nav ul{
-    display: flex;
     flex-direction: column;
-    margin: 0 auto
 }
 .sp-nav ul li a{
     color: #fff;
@@ -1277,23 +1271,26 @@ input[name=question] {
 
 
 
-.pc_bese_lower{
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+.sp_mockup_img2_lower_box{
+    max-width: 100%;
     margin-top: 80px;
-    display: block;
 }
 .sp_mockup_img2_lower{
-    position: absolute;
-    width: 70%;
-    height: auto;
-    right: 10%;
-    top: 24%;
+    position: relative;
     margin: 0 auto;
+    display: block;
+    max-width: 60%;
 }
-/* .sp_img2_lower{ */
-    overflow: hidden; /*拡大した時はみ出た部分を隠す*/
+.sp_img2_lower{
+    margin: 0 auto;
+    overflow: hidden;
+    display: block
+    
+}
+.sp_img2_lower img{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
 }
 .sp_capture_box2_lower{
     margin: 0 auto;
@@ -1303,17 +1300,43 @@ input[name=question] {
     position: absolute;
     top: 2%;
     left: 6%;
-    border-radius: 27px;
+    border-radius: 54px;
 }
+
+
+.pc_mockup_img{
+    position: relative;
+}
+.pc_img{
+    margin: 0 auto;
+    overflow: hidden; /*拡大した時はみ出た部分を隠す*/
+}
+.capture_box{
+    margin: 0 auto;
+    width: 76%;
+    height: 80%;
+    overflow: auto;
+    position: absolute;
+    top: 7%;
+    left: 12.4%;
+}
+
+
+
+
+
+
+
 .works_scroll_mark2{
     position: absolute;
     top: 33%;
     right: 18%;
+    display: block;
 }
 
 .works_scroll_mark2_lower{
     position: absolute;
-    top: 10%;
+    top: 40%;
     right: 4%;
 }
 
@@ -1547,9 +1570,13 @@ a.btn_01 {
 }
 .filter-list li{
     font-size: 14px;
+}
+.filter-list li a{
     padding-top: 6px;
     padding-bottom: 8px;
+    display: block;
 }
+
 /* sp ワークス詳細ページ; */
 .dt_dd_wrap{
     display: block;
@@ -1568,7 +1595,7 @@ a.btn_01 {
     padding-right: 10px;
     padding-left: 10px;
     font-size: 16px;
-    width: 20%;
+    width: 100%;
 }
 .work_mockup_detail dd {
     width: 100%;
@@ -1615,16 +1642,4 @@ a.btn_01 {
     width: 80px;
     margin-top: 56px;
 }
-
-
-
-
-/* ローディング画像 */
-
-
-
-
 }
-
-
-

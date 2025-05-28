@@ -1,33 +1,32 @@
 // ローディングアニメーション
-$(function () {
+// タイマー処理
+  $(window).on('load', function () {
+
   // ローダー終了
   function end_loading() {
-    $('.loading').fadeOut(800);
+    $('.loading').fadeOut(1200);
   }
   // テキスト表示
   function show_loading_logo() {
-    $('.loading_logo').fadeIn(400);
+    $('.loading_logo').fadeIn(1000);
   }
   // テキスト非表示
   function hide_loading_logo() {
-    $('.loading_logo').fadeOut(400);
+    $('.loading_logo').fadeOut(2000);
   }
-})
-
-  // タイマー処理
-  $(window).on('load', function () {
+  
     // 処理①
     setTimeout(function () {
       show_loading_logo();
-    }, 1000)
+    }, 100)
     // 処理②
     setTimeout(function () {
       hide_loading_logo();
-    }, 3500)
+    }, 1500)
     // 処理③
     setTimeout(function () {
       end_loading();
-    }, 4500)
+    }, 3000)
   });
 
 

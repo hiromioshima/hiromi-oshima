@@ -67,7 +67,11 @@
 
 <section class="section1">
     <h2 class="h2_center">CONTACT</h2>
-    <form action="../contact/contact2.html">
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVIE66XChmVlhX3W-j4SV3gY4HR3pYvgpdEeWgKTxtyn10pg/formResponse" 
+          method="post"
+          target="hidden_iframe"
+          onsubmit="submitted=true;">
+        
         <p class="form_text">
             お問い合わせはこちらからお願いします。<br>
             内容を確認後メールアドレス宛にご連絡させていただきます。
@@ -75,30 +79,43 @@
         <div class="form_wrap">
             <div class="data_wrap">
                 <div class="data_box">
-                    <label for="connect">お名前</label><input id="connect" type="text" placeholder="山田 花子" name="your_name" required class="form-text">
+                    <label for="connect">お名前</label>
+                    <input id="connect" type="text" placeholder="山田 花子" name="entry.674093165" required class="form-text">
                 </div>
                 <div class="data_box">
-                    <label for="connect">フリガナ</label><input id="connect" type="text" placeholder="ヤマダ ハナコ" name="furigana" required class="form-text">
+                    <label for="connect">フリガナ</label><input id="connect" type="text" placeholder="ヤマダ ハナコ" name="entry.453107615" required class="form-text">
                 </div>
             </div>
             <div class="data_wrap">
                 <div class="data_box">
-                    Email<input type="email" placeholder="e-mail@gmail.com" name="email" required class="form-text">
+                    Email<input type="email" placeholder="e-mail@gmail.com" name="entry.1440356319" required class="form-text">
                 </div>
                 <div class="data_box">
-                    電話番号<input type="telephone_number" placeholder="000-0000-0000" name="telephone_number" required class="form-text">
+                    電話番号<input type="telephone_number" placeholder="000-0000-0000" name="entry.1577629032" required class="form-text">
                 </div>
             </div>
             <div class="data_wrap">
                 <div class="data_box_2">
                     <p class="data_box_p">お問い合せ内容</p>
-                    <textarea placeholder="お問い合せ内容" name="message" required class="form-text"></textarea>
+                    <textarea placeholder="お問い合せ内容" name="entry.34357256" required class="form-text"></textarea>
                 </div>
             </div>
     </div>
     <input class="send_btn" type="submit" value="SEND" />
     </div>
-    </form>
+
+<script type="text/javascript">
+    var submitted = false;
+</script>    
+<iframe
+  name="hidden_iframe"
+  id="hidden_iframe"
+  style="display: none"
+  onload="if(submitted)  {window.location='contact2.html';}"
+></iframe>
+
+
+</form>
 </section>
 
 
