@@ -27,7 +27,31 @@
     setTimeout(function () {
       end_loading();
     }, 3000)
-  });
+});
+
+
+// ローディング画面初回のみ表示
+const sessionKey = "accesed";
+const sessionValue = true;
+
+if (!sessionStorage.getItem(sessionKey)) {
+	//1回だけ実行させたい処理を書く（今回はローディングの処理）
+	setTimeout(function(){
+	$('#js-loading').fadeOut(2000);
+	},2000);
+
+	//sessionStorageに保存
+	sessionStorage.setItem(sessionKey, sessionValue);
+}else{	
+	console.log('アクセス済みだよ');
+  jQuery(function () {
+	$('#js-loading').css('display','none');
+	});
+}
+
+
+
+
 
 
 
@@ -42,7 +66,7 @@ $(function(){
 
 
 
-// sp トップページのワークス　スライダー
+// sp トップページのワークス スライダー
 $('.top_mockup_wrap1').slick({
     autoplay: true, // 自動でスクロール
     autoplaySpeed: 0, // 自動再生のスライド切り替えまでの時間を設定

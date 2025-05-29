@@ -144,7 +144,7 @@ transform-origin: left top; /*左から右に向かう*/
 /* pc　セクション */
 .section_fv{
     display: flex;
-    margin-top: 180px;
+    margin-top: 160px;
     align-items: center;
     max-width: 100%;
 }
@@ -174,8 +174,11 @@ transform-origin: left top; /*左から右に向かう*/
 }
 
 /* pc ファーストビュー */
+.sp_main_visual{
+    display: none;
+}
 .logo_wrap1{
-    width: 15%;
+    width: 10%;
     height: 174px;
 }
 .logo_box{
@@ -188,34 +191,35 @@ transform-origin: left top; /*左から右に向かう*/
 }
 
 .instagram_logo{
-    width: 14%;
+    width: 30px;
     margin-bottom: 80px;
 }
 .x_logo{
-    width: 14%;
+    width: 30px;
 }
 .main_visual{
-    width: 70%;
+    width: 100%;
     position: relative;
 }
 .catchphrase_box{
     position: absolute;
     top: 16%;
-    left: 10%;
+    left: 15%;
 }
 .catchphrase_ja{
     font-size: 2vw;
     color: #F9F8F6;
     font-family: "Noto Serif JP";
+    letter-spacing: 0.06em;
 }
 .catchphrase_en{
     font-size: 1.5vw;
-    margin-top: 8px;
+    margin-top: 12px;
     color: #F9F8F6;
     font-family: "Cormorant Garamond";
 }
 .fv_scroll_mark{
-    width: 15%;
+    width: 10%;
     height: 174px;
     align-items: flex-start;
     display: flex;
@@ -227,7 +231,7 @@ transform-origin: left top; /*左から右に向かう*/
     justify-content: center;
 }
 .scroll {
-    font-size : 1vw;
+    font-size : 14px;
     letter-spacing: 0.2em;
     writing-mode : vertical-rl;
     position: relative;
@@ -240,8 +244,8 @@ transform-origin: left top; /*左から右に向かう*/
     right : 50%;
     transform : translateX(-50%);
     width : 1px;
-    height : 50%;
-    margin-top: 6vw;
+    height : 60px;
+    margin-top: 70px;
     animation: scroll 1.5s infinite;
 }
 @keyframes scroll {
@@ -262,7 +266,6 @@ transform-origin: left top; /*左から右に向かう*/
     transform-origin: 0 100%;
 }
 }
-
 
 
 /* pc コンセプト */
@@ -692,12 +695,15 @@ a.contact_button:hover {
     border-radius: 90px;
     cursor: pointer;
     transition: all 0.3s;
-    padding-top: 10px;
-    padding-bottom: 12px;
 }
 .filter-list li.is-active {
     background: #545D7B;
     color: #F9F8F6;
+}
+.padding_box{
+    padding-top: 10px;
+    padding-bottom: 12px;
+    display: block;
 }
 .filter-item {
     display: flex;
@@ -813,7 +819,7 @@ a.contact_button:hover {
     position: absolute;
     top: 2%;
     left: 6%;
-    border-radius: 27px;
+    border-radius: 24px;
 }
 .sp_mockup_img2_lower{
     display: none;
@@ -1017,6 +1023,14 @@ input[name=question] {
 .pc_nav{
     display: none;
 }
+.logo_wrap1 {
+        display: none;
+}
+.fv_scroll_mark {
+    display: none;
+}
+
+
 .hamburger{
     display: block;
     position: absolute;
@@ -1097,6 +1111,9 @@ input[name=question] {
 .ul_logo_wrap{
     height: 100%;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
 }
 .sp-nav ul{
     flex-direction: column;
@@ -1111,6 +1128,9 @@ input[name=question] {
 }
 
 /*  1100px以下　セクション*/
+.section_fv {
+    margin-top: 140px;
+}
 .section1{
     padding-top: 160px;
 }
@@ -1121,6 +1141,17 @@ input[name=question] {
     margin-top: 160px;
 }
 
+/*  1100px以下 ファーストビュー*/
+.main_visual {
+    width: 90%;
+    margin: 0 auto;
+}
+.catchphrase_ja {
+    font-size: 2.7vw;
+}
+.catchphrase_en {
+    font-size: 1.8vw;
+}
 
 /*  1100px以下 アバウト*/
 .section5{
@@ -1264,12 +1295,6 @@ input[name=question] {
     width: 100%;
     margin: 0 auto;
 }
-.sp_mockup_img2{
-    display: none;
-}
-
-
-
 
 .sp_mockup_img2_lower_box{
     max-width: 100%;
@@ -1279,7 +1304,7 @@ input[name=question] {
     position: relative;
     margin: 0 auto;
     display: block;
-    max-width: 60%;
+    max-width: 40%;
 }
 .sp_img2_lower{
     margin: 0 auto;
@@ -1299,56 +1324,43 @@ input[name=question] {
     overflow: auto;
     position: absolute;
     top: 2%;
-    left: 6%;
-    border-radius: 54px;
+    left: 6.2%;
+    border-radius: 30px;
 }
 
 
-.pc_mockup_img{
-    position: relative;
-}
-.pc_img{
-    margin: 0 auto;
-    overflow: hidden; /*拡大した時はみ出た部分を隠す*/
-}
-.capture_box{
-    margin: 0 auto;
-    width: 76%;
-    height: 80%;
-    overflow: auto;
+
+.works_scroll_mark {
     position: absolute;
-    top: 7%;
-    left: 12.4%;
+    top: 30%;
+    right: 4%;
 }
-
-
-
-
-
-
-
 .works_scroll_mark2{
     position: absolute;
-    top: 33%;
+    top: 30%;
     right: 18%;
     display: block;
 }
-
 .works_scroll_mark2_lower{
     position: absolute;
-    top: 40%;
-    right: 4%;
+    top: 33%;
+    right: -15%;
+}
+.scroll {
+    font-size : 14px;
+}
+.scroll::after {
+    height : 50px;
+    margin-top: 75px;
 }
 
 
 
 
 
-
-
-
-
-
+.sp_mockup_img2{
+    display: none;
+}
 .banner_mockup_box{
     display: none;
 }
@@ -1356,6 +1368,10 @@ input[name=question] {
     width: 100%;
     display: block;
 }
+.graphic_img_box{
+    display: none;
+}
+
 
 /* sp　コンタクトページ */
 .data_wrap{
@@ -1370,13 +1386,22 @@ input[name=question] {
 
 
 
+
 /* sp 767px スマホ版 */
 @media screen and (max-width: 767px){
+.pc_header {
+    height: 70px;
+}
+.logo {
+    width: 40px;
+    top: 9px;
+}
+.hamburger {
+    top: 24px;
+}
 
 .section_fv{
-    margin-top: 110px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-top: 65px;
     max-width: 100%;
 }
 .section_width100{
@@ -1384,7 +1409,7 @@ input[name=question] {
 
 }
 .section1{
-    padding-top: 160px;
+    padding-top: 130px;
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
@@ -1393,6 +1418,7 @@ input[name=question] {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 130px;
 }
 .section_contact{
     margin-top: 100px;
@@ -1423,21 +1449,36 @@ a.btn_01 {
 }
 
 /* sp ファーストビュー */
+.sp_main_visual{
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+.sp_catchphrase_box{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
 .catchphrase_ja{
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-family: Noto Serif JP;
 }
 .catchphrase_en{
-    font-size: 2vw;
+    font-size: 3vw;
 }
-
-/* sp コンセプト */
+.main_visual{
+    display: none;
+}
 .logo_wrap1{
     display: none;
 }
 .fv_scroll_mark{
     display: none;
 }
+
+
+/* sp コンセプト */
+
 .main_visual{
     width: 100%;
     position: relative;
@@ -1464,6 +1505,18 @@ a.btn_01 {
     font-size: 30px;
     text-align: center;
     display: block;
+    position: relative;
+}
+.sp_h2::before {
+    background-color: #545D7B;
+    border-radius: 5px;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 16px;
 }
 .about_wrap{
     display: block;
@@ -1566,7 +1619,7 @@ a.btn_01 {
     padding-bottom: 6%;
 }
 .filter-list{
-    padding: 60px 0px;
+    padding: 60px 0px 40px 0px;
 }
 .filter-list li{
     font-size: 14px;
@@ -1580,6 +1633,8 @@ a.btn_01 {
 /* sp ワークス詳細ページ; */
 .dt_dd_wrap{
     display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .work_mockup_detail p{
     font-size: 24px;
@@ -1587,6 +1642,7 @@ a.btn_01 {
 .work_mockup_detail dl {
     width: 100%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 .work_mockup_detail{
     margin-top: 40px;
@@ -1599,7 +1655,7 @@ a.btn_01 {
 }
 .work_mockup_detail dd {
     width: 100%;
-    margin-top: 24px;
+    margin-top: 12px;
     box-sizing: border-box;
 }
 
@@ -1620,11 +1676,46 @@ a.btn_01 {
     width: 24%;
     right: -2%;
 }
+.sp_mockup_img2_lower{
+    max-width: 70%;
+}
 .works_scroll_mark2{
     position: absolute;
     top: 33%;
     right: 4%;
 }
+
+.works_scroll_mark {
+    position: absolute;
+    top: 30%;
+    right: 4%;
+}
+.works_scroll_mark2{
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    display: block;
+}
+.works_scroll_mark2_lower{
+    position: absolute;
+    top: 33%;
+    right: -14%;
+}
+.scroll {
+    font-size : 12px;
+}
+.scroll::after {
+    height : 40px;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
 
 /* sp フッター */
 .pc_nav_footer ul{
@@ -1642,4 +1733,22 @@ a.btn_01 {
     width: 80px;
     margin-top: 56px;
 }
+}
+
+
+
+/* sp 500px スマホ版 */
+@media screen and (max-width: 500px){
+.works_scroll_mark2{
+    top: 25%;
+    right: 3%;
+}
+.scroll{
+    font-size: 10px;
+}
+.scroll::after{
+    margin-top: 50px;
+}
+
+
 }
