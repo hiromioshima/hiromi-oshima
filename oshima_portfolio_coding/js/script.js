@@ -50,7 +50,7 @@ if (!sessionStorage.getItem(sessionKey)) {
 
 	//sessionStorageに保存
 	sessionStorage.setItem(sessionKey, sessionValue);
-}else{	
+}else{
 	console.log('アクセス済みだよ');
   jQuery(function () {
 	$('#js-loading').css('display','none');
@@ -87,9 +87,9 @@ $('.top_mockup_wrap1').slick({
     pauseOnHover: false, // スライダーにマウスホバーした時にスライドを停止させるか
     responsive: [
       {
-        breakpoint: 750,
+        breakpoint: 767,
         settings: {
-          slidesToShow: 1, // 画面幅750px以下でスライド1枚表示
+          slidesToShow: 1, // 画面幅767px以下でスライド1枚表示
         }
       }
     ]
